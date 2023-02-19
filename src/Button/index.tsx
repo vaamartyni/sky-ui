@@ -16,7 +16,7 @@ export function Button(
     } : IButton
 ) {
     const className = `button button-${variant}`
-    return <button className={className} disabled={disabled} onClick={onClick}>
+    return (<button className={className} disabled={disabled} onClick={onClick}>
         {children}
-    </button>
+    </button>);
 }
