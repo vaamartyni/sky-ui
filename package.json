@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "homepage": "https://vaamartyni.github.io/sky-ui",
   "license": "MIT",
   "main": "dist/index.js",
@@ -21,7 +21,8 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "semantic-release": "semantic-release"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -77,6 +78,11 @@
     "size-limit": "^8.2.4",
     "tsdx": "^0.14.1",
     "tslib": "^2.5.0",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "semantic-release": "^20.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vaamartyni/sky-ui.git"
   }
 }
