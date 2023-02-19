@@ -1,0 +1,29 @@
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 294px;
+    min-height: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.button-primary {
+    /* Black */
+    background: #111111;
+    border: 1px solid #111111;
+
+    /* White */
+
+    color: #FDFEFF;
+}
+
+.button-secondary {
+    background: #FDFEFF;
+    /* Black */
+    border: 1px solid #111111;
+    color: #111111;
+}
