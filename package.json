@@ -84,5 +84,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/vaamartyni/sky-ui.git"
+  },
+  "release": {
+    "branches": ["main"]
   }
 }
