@@ -19,7 +19,7 @@ jobs:
         run:
           npm run build-storybook
         with:
-          NODE_OPTIONS: ${{ secrets.NODE_OPTIONS }}
+          NODE_OPTIONS: ${{ vars.NODE_OPTIONS }}
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.3.4
         with:
