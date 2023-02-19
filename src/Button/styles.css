@@ -21,6 +21,11 @@
     color: #FDFEFF;
 }
 
+.button-primary:hover {
+    color: #FDFEFF;
+    opacity: 0.8;
+}
+
 .button-secondary {
     background: #FDFEFF;
     /* Black */
