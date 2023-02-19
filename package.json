@@ -38,7 +38,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "sky-ui",
+  "name": "vaamartyni-dev-sky-ui",
   "author": "Valdemar",
   "module": "dist/sky-ui.esm.js",
   "size-limit": [
