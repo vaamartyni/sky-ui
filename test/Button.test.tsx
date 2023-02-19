@@ -1,5 +1,5 @@
 import { Button } from '../src/Button';
-import {fireEvent, render, screen} from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
 const throwAnError = () => {
   throw new Error();
@@ -37,16 +37,20 @@ describe('Button', () => {
 
     //HANDLERS========================================================>
     test('onClick handler works', () => {
-        const onClick = jest.fn();
-        render(<Button onClick={onClick}>Heaven Platform</Button>);
-        fireEvent.click(screen.getByText('Heaven Platform'))
-        expect(onClick).toBeCalledTimes(1);
+      const onClick = jest.fn();
+      render(<Button onClick={onClick}>Heaven Platform</Button>);
+      fireEvent.click(screen.getByText('Heaven Platform'));
+      expect(onClick).toBeCalledTimes(1);
     });
     test('onClick handler doesnt work in specific condition', () => {
-        const onClick = jest.fn();
-        render(<Button onClick={onClick} disabled>Heaven Platform</Button>);
-        fireEvent.click(screen.getByText('Heaven Platform'))
-        expect(onClick).not.toBeCalled();
+      const onClick = jest.fn();
+      render(
+        <Button onClick={onClick} disabled>
+          Heaven Platform
+        </Button>
+      );
+      fireEvent.click(screen.getByText('Heaven Platform'));
+      expect(onClick).not.toBeCalled();
     });
   });
 });
