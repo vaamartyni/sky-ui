@@ -29,9 +29,33 @@
     color: rgb(206,207,207);
 }
 
+.button-primary:active {
+    background: rgb(65,65,65);
+}
+
+.button-primary:disabled {
+    background: rgb(154,156,165);
+    color: #EAEAF2;
+}
+
 .button-secondary {
     background: #FDFEFF;
     /* Black */
     border: 1px solid #111111;
+    color: #111111;
+}
+
+.button-secondary:hover {
+    border-color: #818390;
+}
+
+.button-cancel {
+    background: #FDFEFF;
+    /* Black */
+    border: 1px solid #111111;
+    color: #818390;
+}
+
+.button-cancel:hover {
     color: #111111;
 }
