@@ -4,7 +4,7 @@ import './styles.css';
 export interface IButton {
   children?: ReactNode;
   onClick?: () => void;
-  variant?: 'primary' | 'secondary';
+  variant?: 'primary' | 'secondary' | "warning";
   disabled?: boolean;
 }
 export function Button({
